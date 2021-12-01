@@ -6,9 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tailwind.css" />
     <script src="script.js"></script>
   </head>
-  <body>
-    <div></div>
+  <body class="bg-primary">
+    <header class="flex flex-col h-screen pt-11">
+      <div class="flex flex-grow flex-col items-center content-center">
+        <div class="w-30 h-30">
+          <img
+            src="portrait.jpg"
+            class="
+              rounded-full
+              border-font-color-beige border-2 border-solid
+              h-64
+              w-64
+              object-cover
+            "
+          />
+        </div>
+        <h1 class="text-font-color-beige text-center text-3xl">
+          Jim Bothén <br />
+          Junior Front <br />
+          End Developer
+        </h1>
+      </div>
+      <nav>
+        <div class="flex justify-evenly h-32">
+          <button
+            id="experienceButton"
+            class="
+              flex-grow
+              bg-secondary
+              border-2 border-font-color-black border-solid
+            "
+          >
+            Experience
+          </button>
+          <button
+            id="aboutMeButton"
+            class="flex-grow bg-secondary border-2 border-font-color-black"
+          >
+            About me
+          </button>
+          <button
+            id="portfolioButton"
+            class="flex-grow bg-secondary border-2 border-font-color-black"
+          >
+            Portfolio
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Experience -->
+      <div id="experience" class="bg-terciary flex-col p-20 hidden">
+        <h2 class="text-font-color-black text-2xl pb-10">Experience</h2>
+        <p class="text-font-color-black pb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
+          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
+          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
+          dolores!
+        </p>
+        <p class="text-font-color-black pb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
+          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
+          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
+          dolores!
+        </p>
+      </div>
+      <!-- About me -->
+      <div id="aboutMe" class="bg-terciary flex-col p-20 hidden">
+        <h2 class="text-font-color-black text-2xl pb-10">About me</h2>
+        <p class="text-font-color-black pb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
+          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
+          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
+          dolores!
+        </p>
+        <p class="text-font-color-black pb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
+          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
+          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
+          dolores!
+        </p>
+      </div>
+      <!-- Portfolio -->
+      <div id="portfolio" class="bg-terciary flex-col p-20 hidden">
+        <h2 class="text-font-color-black text-2xl pb-10">Portfolio</h2>
+        <p class="text-font-color-black pb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
+          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
+          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
+          dolores!
+        </p>
+        <p class="text-font-color-black pb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
+          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
+          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
+          dolores!
+        </p>
+      </div>
+    </main>
+    <footer class="flex bg-footer-color flex-row p-5">
+      <div class="px-2">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="px-2">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="px-2">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+    </footer>
   </body>
 </html>
