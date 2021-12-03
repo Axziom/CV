@@ -10,140 +10,207 @@
     <script src="script.js"></script>
   </head>
   <body class="bg-primary">
-    <header class="flex flex-col pt-11">
-      <div class="flex flex-grow flex-col items-center content-center">
-        <div class="w-30 h-30">
-          <img
-            src="portrait.jpg"
+    <div class="relative min-h-full">
+      <div class="pb-80">
+        <header class="flex flex-col pt-11">
+          <div
             class="
-              rounded-full
-              border-font-color-beige border-2 border-solid
-              h-64
-              w-64
-              object-cover
-            "
-          />
-        </div>
-        <h1 class="text-font-color-beige text-center text-3xl py-6">
-          Jim Bothén <br />
-          Junior Front <br />
-          End Developer
-        </h1>
-      </div>
-      <nav>
-        <div class="flex justify-evenly h-32">
-          <button
-            id="experienceButton"
-            class="
-              flex-grow
-              bg-secondary
-              border-2 border-font-color-black border-solid
+              flex flex-grow flex-col
+              md:flex-row md:justify-evenly md:pb-10
+              items-center
+              content-center
             "
           >
-            Experience
-          </button>
-          <button
-            id="aboutMeButton"
-            class="flex-grow bg-secondary border-2 border-font-color-black"
+            <div class="w-30 h-30">
+              <img
+                src="portrait.jpg"
+                class="
+                  rounded-full
+                  border-font-color-beige border-2 border-solid
+                  h-64
+                  w-64
+                  object-cover
+                "
+              />
+            </div>
+            <h1 class="text-font-color-beige text-center text-3xl py-6">
+              Jim Bothén <br />
+              Junior Front <br />
+              End Developer
+            </h1>
+          </div>
+          <nav>
+            <div class="flex justify-evenly h-32">
+              <button
+                id="experienceButton"
+                class="
+                  flex-grow
+                  bg-secondary
+                  border-2 border-font-color-black border-solid
+                "
+              >
+                Experience
+              </button>
+              <button
+                id="aboutMeButton"
+                class="flex-grow bg-secondary border-2 border-font-color-black"
+              >
+                About me
+              </button>
+              <button
+                id="portfolioButton"
+                class="flex-grow bg-secondary border-2 border-font-color-black"
+              >
+                Portfolio
+              </button>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <!-- Experience -->
+          <div id="experience" class="bg-terciary hidden flex-col pt-20 px-4">
+            <h2 class="text-font-color-black text-2xl pb-10">Experience</h2>
+            <p class="text-font-color-black pb-10 text-lg">
+              A budding carreer in Front End Development meets over a decade's
+              worth of experience in Customer Service.
+            </p>
+            <p class="text-font-color-black pb-10">
+              I've spent the last decade working in various positions of
+              Customer Service, including bartending, kitchen staff, technical
+              support and management. <br />
+              My considerable experience within the Service industry coupled
+              with my newly begun journey as a Front End Developer makes me
+              ideal an ideal employee who is dependable, experienced, loyal and
+              a truly creative problem solver with a sincere focus on always
+              providing the best possible product to my clients and customers
+            </p>
+            <p class="text-font-color-black pb-10">
+              Take a look through my carreer path
+            </p>
+            <h3 class="text-font-color-black pb-4">
+              AB Sappa - Customer Service Employee. <br />
+              June 2018 - December 2020
+            </h3>
+            <h3 class="text-font-color-black pb-4">
+              Teleperformance - Customer Service Employee and Teamleader.<br />
+              Mars 2016 - June 2018
+            </h3>
+            <h3 class="text-font-color-black pb-4">
+              Nefertiti Jazzklubb - Bartender, waiter and bus boy.<br />
+              June 2015 - August 2016
+            </h3>
+            <h3 class="text-font-color-black pb-4">
+              Restaurang Jazzhuset - Bartender and bus boy.<br />
+              December 2012 - Mars 2016
+            </h3>
+            <h3 class="text-font-color-black pb-4">
+              Jensens Böfhus - Kitchen staff, bus boy and waiter.<br />
+              September 2010 - January 2012
+            </h3>
+            <p class="text-font-color-black py-4">
+              I have some references here if you want them!
+            </p>
+            <p class="text-font-color-black pb-4">
+              Amanda Peeker - Teamleader and manager at AB Sappa <br />
+              (+46)729-684080
+            </p>
+            <p class="text-font-color-black pb-4">
+              Julius Cederdahl - Colleague at AB Sappa <br />
+              (+46)736-330648
+            </p>
+          </div>
+          <!-- About me -->
+          <div id="aboutMe" class="bg-terciary hidden flex-col pt-20 px-4">
+            <h2 class="text-font-color-black text-2xl pb-10">About me</h2>
+            <p class="text-font-color-black pb-10 text-lg">
+              Hi there! I'm Jim and it's very nice to meet you. I hope we can do
+              so face to face in the near future!
+            </p>
+            <p class="text-font-color-black pb-10">
+              Having been me for 30 years, I like to think I know myself fairly
+              well. I'd describe myself as a calm, dependable and loyal person
+              with a passion for good food, drink and company. I graduated the
+              Swedish equivalent of High School in the summer of 2010, and have
+              since then worked in several jobs in the Customer Service industry
+              and have become pretty good at it, if I do say so myself.
+              Recently, though, I've wanted to continue my journey and move into
+              something a little more creative. As my partner took a two year
+              course in Front End Development, I became curious and decided to
+              try it out for myself. I took a few online courses in HTML and CSS
+              and discovered that I found it extremely rewarding.
+            </p>
+            <p class="text-font-color-black pb-10">
+              Fast forward a couple of months and here I am, in the middle of
+              the same two year course and on my way to becoming a Front End
+              Developer in my own right!
+            </p>
+            <p class="text-font-color-black pb-10">
+              I am absolutely beyond excited for what the future holds.
+            </p>
+          </div>
+          <!-- Portfolio -->
+          <div id="portfolio" class="bg-terciary hidden flex-col pt-20 px-4">
+            <h2 class="text-font-color-black text-2xl pb-10">Portfolio</h2>
+            <p class="text-font-color-black text-lg pb-4">
+              This is where my stack's at!
+            </p>
+            <ul>
+              <li class="text-font-color-black pb-1">HTML</li>
+              <li class="text-font-color-black pb-1">CSS</li>
+              <li class="text-font-color-black pb-4">JavaScript</li>
+            </ul>
+            <p class="text-font-color-black text-lg pb-4">
+              Check out these cool projects I've worked on!
+            </p>
+            <p class="text-font-color-black pb-10">
+              (This section really needs more content...)
+            </p>
+          </div>
+        </main>
+      </div>
+      <footer
+        class="flex bg-footer-color flex-col p-5 h-80 absolute bottom-0 w-full"
+      >
+        <h3 class="text-center text-font-color-black py-8">
+          Wanna get in touch?
+        </h3>
+        <div class="flex flex-col md:flex-row">
+          <div class="flex px-2 justify-center items-center">
+            <img src="mail-icon.png" class="h-8 w-8 mr-2" />
+            <p>
+              Send me an email at <br />
+              jim.bothen@gmail.com
+            </p>
+          </div>
+          <a href="https://github.com/Axziom" target="_blank">
+            <div class="flex px-2 justify-center items-center pt-4">
+              <img
+                src="GitHub-Mark/PNG/GitHub-Mark-32px.png"
+                class="h-8 w-8 mr-2"
+              />
+              <p>Check out my github</p>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/jim.bothen" target="_blank">
+            <div class="flex px-2 justify-center items-center pt-4">
+              <img
+                src="Facebook Brand Asset Pack 2019/f-Logos-2019-1/f_Logo_Online_04_2019/black/PNG/f_logo_RGB-Black_58.png"
+                class="w-8 h-8 mr-2"
+              />
+              <p>Are you on facebook?</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jim-both%C3%A9n-435b73227/"
+            target="_blank"
           >
-            About me
-          </button>
-          <button
-            id="portfolioButton"
-            class="flex-grow bg-secondary border-2 border-font-color-black"
-          >
-            Portfolio
-          </button>
+            <div class="flex px-2 justify-center items-center pt-4">
+              <img src="LinkedIn-Logos/LI-In-Black.png" class="h-8 w-8 mr-2" />
+              <p>Here's my LinkedIn</p>
+            </div>
+          </a>
         </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Experience -->
-      <div id="experience" class="bg-terciary hidden flex-col p-20">
-        <h2 class="text-font-color-black text-2xl pb-10">Experience</h2>
-        <p class="text-font-color-black pb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
-          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
-          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
-          dolores!
-        </p>
-        <p class="text-font-color-black pb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
-          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
-          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
-          dolores!
-        </p>
-      </div>
-      <!-- About me -->
-      <div id="aboutMe" class="bg-terciary hidden flex-col p-20">
-        <h2 class="text-font-color-black text-2xl pb-10">About me</h2>
-        <p class="text-font-color-black pb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
-          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
-          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
-          dolores!
-        </p>
-        <p class="text-font-color-black pb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
-          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
-          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
-          dolores!
-        </p>
-      </div>
-      <!-- Portfolio -->
-      <div id="portfolio" class="bg-terciary hidden flex-col p-20">
-        <h2 class="text-font-color-black text-2xl pb-10">Portfolio</h2>
-        <p class="text-font-color-black pb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
-          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
-          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
-          dolores!
-        </p>
-        <p class="text-font-color-black pb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
-          quasi accusamus quos vero beatae repellendus dolor ut error odio illum
-          ullam, nesciunt praesentium rem, necessitatibus debitis nemo eligendi
-          dolores!
-        </p>
-      </div>
-    </main>
-    <footer class="flex bg-footer-color flex-col p-5">
-      <h3 class="text-center text-font-color-black py-8">
-        Wanna get in touch?
-      </h3>
-      <div class="flex flex-col">
-        <div class="flex px-2 justify-evenly">
-          <img src="mail-icon.png" class="h-8 w-8" />
-          <p>
-            Send me an email at <br />
-            jim.bothen@gmail.com
-          </p>
-        </div>
-        <a href="https://github.com/Axziom" target="_blank">
-          <div class="flex px-2 justify-evenly pt-4">
-            <img src="GitHub-Mark/PNG/GitHub-Mark-32px.png" />
-            <p>Check out my github</p>
-          </div>
-        </a>
-        <a href="https://www.facebook.com/jim.bothen" target="_blank">
-          <div class="flex px-2 justify-evenly pt-4">
-            <img
-              src="Facebook Brand Asset Pack 2019/f-Logos-2019-1/f_Logo_Online_04_2019/black/PNG/f_logo_RGB-Black_58.png"
-              class="w-8 h-8"
-            />
-            <p>Are you on facebook?</p>
-          </div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jim-both%C3%A9n-435b73227/"
-          target="_blank"
-        >
-          <div class="flex px-2 justify-evenly pt-4">
-            <img src="LinkedIn-Logos/LI-In-Black.png" class="h-8 w-8" />
-            <p>Here's my LinkedIn</p>
-          </div>
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
