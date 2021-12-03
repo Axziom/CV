@@ -24,7 +24,7 @@
             "
           />
         </div>
-        <h1 class="text-font-color-beige text-center text-3xl">
+        <h1 class="text-font-color-beige text-center text-3xl py-6">
           Jim Bothén <br />
           Junior Front <br />
           End Developer
@@ -59,20 +59,7 @@
     </header>
     <main>
       <!-- Experience -->
-      <div
-        id="experience"
-        class="
-          bg-terciary
-          flex flex-col
-          p-20
-          transform
-          scale-y-0
-          origin-top
-          transition
-          duration-200
-          ease-in
-        "
-      >
+      <div id="experience" class="bg-terciary hidden flex-col p-20">
         <h2 class="text-font-color-black text-2xl pb-10">Experience</h2>
         <p class="text-font-color-black pb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
@@ -88,20 +75,7 @@
         </p>
       </div>
       <!-- About me -->
-      <div
-        id="aboutMe"
-        class="
-          bg-terciary
-          flex flex-col
-          p-20
-          transform
-          scale-y-0
-          origin-top
-          transition
-          duration-200
-          ease-in
-        "
-      >
+      <div id="aboutMe" class="bg-terciary hidden flex-col p-20">
         <h2 class="text-font-color-black text-2xl pb-10">About me</h2>
         <p class="text-font-color-black pb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
@@ -117,20 +91,7 @@
         </p>
       </div>
       <!-- Portfolio -->
-      <div
-        id="portfolio"
-        class="
-          bg-terciary
-          flex flex-col
-          p-20
-          transform
-          scale-y-0
-          origin-top
-          transition
-          duration-200
-          ease-in
-        "
-      >
+      <div id="portfolio" class="bg-terciary hidden flex-col p-20">
         <h2 class="text-font-color-black text-2xl pb-10">Portfolio</h2>
         <p class="text-font-color-black pb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam
@@ -146,15 +107,42 @@
         </p>
       </div>
     </main>
-    <footer class="flex bg-footer-color flex-row p-5">
-      <div class="px-2">
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-      <div class="px-2">
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-      <div class="px-2">
-        <p>Lorem ipsum dolor sit amet</p>
+    <footer class="flex bg-footer-color flex-col p-5">
+      <h3 class="text-center text-font-color-black py-8">
+        Wanna get in touch?
+      </h3>
+      <div class="flex flex-col">
+        <div class="flex px-2 justify-evenly">
+          <img src="mail-icon.png" class="h-8 w-8" />
+          <p>
+            Send me an email at <br />
+            jim.bothen@gmail.com
+          </p>
+        </div>
+        <a href="https://github.com/Axziom" target="_blank">
+          <div class="flex px-2 justify-evenly pt-4">
+            <img src="GitHub-Mark/PNG/GitHub-Mark-32px.png" />
+            <p>Check out my github</p>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/jim.bothen" target="_blank">
+          <div class="flex px-2 justify-evenly pt-4">
+            <img
+              src="Facebook Brand Asset Pack 2019/f-Logos-2019-1/f_Logo_Online_04_2019/black/PNG/f_logo_RGB-Black_58.png"
+              class="w-8 h-8"
+            />
+            <p>Are you on facebook?</p>
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jim-both%C3%A9n-435b73227/"
+          target="_blank"
+        >
+          <div class="flex px-2 justify-evenly pt-4">
+            <img src="LinkedIn-Logos/LI-In-Black.png" class="h-8 w-8" />
+            <p>Here's my LinkedIn</p>
+          </div>
+        </a>
       </div>
     </footer>
   </body>
